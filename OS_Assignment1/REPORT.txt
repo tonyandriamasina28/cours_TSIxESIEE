@@ -1,0 +1,23 @@
+Assignment 1 – Basic System Information
+
+Name: ANDRIAMASINA Tony
+
+Description:
+This program displays basic information about the operating system and the current session.
+
+Functions Used:
+
+1. platform.system()
+- Used to get the operating system name.
+
+2. platform.release()
+- Used to get the kernel or system release.
+
+3. getpass.getuser()
+- Used to get the current user.
+
+4. os.getcwd()
+- Used to get the current working directory.
+
+Execution Proof:
+Screenshot attached showing successful execution.

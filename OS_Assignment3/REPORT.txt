@@ -1,0 +1,33 @@
+Assignment 3 – Process Creation and IPC
+
+Name: ANDRIAMASINA Tony
+Student ID: 64024
+
+Description:
+This program demonstrates process creation and Inter-Process Communication (IPC).
+
+Functions and Libraries Used:
+
+1. multiprocessing.Process
+- Used to create the child process.
+
+2. multiprocessing.Pipe
+- Used as the IPC mechanism.
+- Pipe allows bidirectional communication between parent and child.
+
+3. os.getpid()
+- Used to display Process IDs (PID).
+
+Workflow:
+1. Parent creates child process.
+2. Parent sends text through Pipe.
+3. Child receives text.
+4. Child converts text to uppercase.
+5. Child sends transformed text back.
+6. Parent displays final result.
+
+Why Pipe:
+Pipe is appropriate because this task requires direct communication between exactly two processes and is simple to implement.
+
+Execution Proof:
+Screenshot attached.

@@ -1,0 +1,10 @@
+
+PART 1 — Race Condition
+
+Expected Result: 4000000
+Actual Result:   1200000
+
+PART 2 — Using Lock
+
+Expected Result: 4000000
+Actual Result:   4000000

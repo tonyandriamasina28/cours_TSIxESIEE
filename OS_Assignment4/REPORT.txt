@@ -1,0 +1,40 @@
+Assignment 4 – Race Condition and Synchronization
+
+Name: ANDRIAMASINA Tony
+Student ID: 64024
+
+
+Part 1 – Race Condition
+
+A race condition happens when multiple threads access and modify the same shared variable at the same time without coordination.
+
+In this experiment, four threads incremented the same global counter 1,000,000 times each.
+
+The expected result was 4,000,000.
+
+However, the actual result was smaller, between about 1,000,000 and 1,800,000 depending on the run, because some updates were overwritten by other threads before being stored.
+
+The first version of the program did not show this: it returned 4,000,000 because the context switch happened after the write. With Python's GIL, the short read and write were not interrupted in practice. Moving time.sleep(0) between the read and the write exposed the race condition.
+
+
+Part 2 – Synchronization Using Lock
+
+To solve the issue, a Lock (Mutex) was added.
+
+Only one thread was allowed to update the counter at a time.
+
+This prevented simultaneous modification and guaranteed that every increment was counted.
+
+After synchronization, the final result became exactly 4,000,000.
+
+
+Library Used
+
+- threading.Thread → create multiple threads
+- threading.Lock → synchronize access
+- time.sleep(0) → increase context switching to expose race conditions
+
+
+Execution Proof
+
+See execution_output.txt.

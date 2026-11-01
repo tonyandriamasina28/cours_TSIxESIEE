@@ -1,0 +1,27 @@
+Assignment 2 – Linux File System Interaction
+
+Name: ANDRIAMASINA Tony
+Student ID: 64024
+
+Functions Used:
+
+1. os.listdir()
+- Used to retrieve all files and folders inside the selected directory.
+
+2. os.path.isfile()
+- Used to verify that the item is a file.
+
+3. os.path.join()
+- Used to create the full file path.
+
+4. os.stat()
+- Used to obtain metadata such as file size.
+
+5. os.access()
+- Used to check permissions:
+  R = Read
+  W = Write
+  X = Execute
+
+Execution Proof:
+Screenshot attached showing successful execution.
